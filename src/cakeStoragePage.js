@@ -41,7 +41,7 @@ const cakeOptions = [
           id: 2,
           name: 'Gender Reveal',
           image: '/images/gender.jpg',
-          description: 'It’s a girl! 🎀',
+          description: 'It’s a girl!🎀',
           price: 900,
       },
 
