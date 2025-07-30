@@ -7,9 +7,9 @@ const cakeOptions = [
     
       {
         id:6,
-        name:'Graduation Cake',
+        name:'Guava Coconut',
         image:'/images/guava_coconut.jpg',
-        description:'Floral theme graduation cake, with bees and birds decoration.',
+        description:'✨Las rosas rojas son siempre una buena opción ✨🌹',
         price:900
       },
 
@@ -17,54 +17,54 @@ const cakeOptions = [
         id: 4,
         name: 'Birthday Cake',
         image: '/images/bday.jpg',
-        description: '3 layer half vanilla/ half chocolate cake with vanilla buttercream and vanilla drip.',
+        description: '✨Para una chica muy femenina, que ama las mariposas 🦋 y le encanta el pink 💓',
         price: 900,
       },
 
       {
         id:1,
-        name:'Tropical Theme',
-        image:'/images/mothers.jpg',
-        description:'Fondant decor, buttercream cake with base cake having edible wafer paper.',
+        name:'Mothers Day',
+        image:'/images/mother.jpg',
+        description:'✨ De nuestra colección de madres 2022✨|Una librita llena de amor |🌹',
         price:900
       },
 
       {
         id: 3,
-        name: 'Construction Theme',
-        image: '/images/mother.jpg',
-        description: '3 layers of 6” funfetti cake, vanilla buttercream and white chocolate drip',
+        name: 'Mothers Day',
+        image: '/images/mothers.jpg',
+        description: '✨El regalo perfecto para MaMá 💝 ',
         price: 900,
       },
     
       {
           id: 2,
-          name: 'Birthday Cake',
+          name: 'Gender Reveal',
           image: '/images/gender.jpg',
-          description: 'Two Fast!',
+          description: 'It’s a girl! 🎀',
           price: 900,
       },
 
       {
         id: 5,
-        name: 'Orange',
+        name: 'Fruit Theme',
         image: '/images/orange.jpg', // ✅ Correct
-        description: 'Chocolate cake, chocolate buttercream, with chocolate ganache drip and a variety of chocolate candy and sprinkles.',
+        description: '🍊✨',
         price: 900,
       },
 
       {
           id:7,
-          name:'Scrap Metal',
+          name:'Safari',
           image:'images/safari.jpg',
-          description:'Fondant dusted with silver luster dust and copper luster dust to give a rusted look.',
+          description:'SAFARI 🦁🐵🦒🌿',
           price:900
       },
       {
         id: 5,
-        name: 'Orange',
+        name: 'Sonic',
         image: '/images/sonic.jpg', // ✅ Correct
-        description: 'Chocolate cake, chocolate buttercream, with chocolate ganache drip and a variety of chocolate candy and sprinkles.',
+        description: 'S O N I C 💫💫',
         price: 900,
       },
 ];
