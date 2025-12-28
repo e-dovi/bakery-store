@@ -105,7 +105,7 @@ const InnerApp = ({ tab, setTab }) => {
           transition={{ duration: 0.6 }}
         >
           <LogoImage src={logo} alt="Sweet Layers Logo" />
-          <SiteTitle>Happy Cake Bakery</SiteTitle>
+          <SiteTitle>Sweet Layers Bakery</SiteTitle>
           <WelcomeText>
             Choose a cake from our collection or design your own masterpiece!
           </WelcomeText>
@@ -150,7 +150,6 @@ const InnerApp = ({ tab, setTab }) => {
       {/* Footer */}
       <Footer>
         <p>
-          This website is a demonstration created by Agrandir Technologies for Happy Cake Bakery.
           All content is for display and testing purposes only. Orders will not be processed.
         </p>
       </Footer>

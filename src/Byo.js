@@ -590,7 +590,7 @@ export default function CakeCustomizerApp() {
         <Input
           type="text"
           value={cake.message}
-          onChange={(e) => setCake({ ...cake, message: e.target.value })}
+          onChange={(e) => {setCake({ ...cake, message: e.target.value })}}
         />
       ) : (
         <Select

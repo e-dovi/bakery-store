@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# 🎂 Sweet Layers Bakery
+A responsive React (Create React App) application that showcases a pastel‑themed bakery storefront with a full cake menu, a build‑your‑own cake customizer, and a Redux‑powered shopping cart. The UI is styled using Styled Components with smooth animations from Framer Motion, optimized for both desktop and smaller screens.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📦 Features
 
-## Available Scripts
+### 🎂 Cake Menu
+A scrollable list of cakes, each including:
 
-In the project directory, you can run:
+Product image
 
-### `npm start`
+Name
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Price
 
-### `npm test`
+Add‑to‑cart button
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🍰 Build‑Your‑Own Cake (BYO)
+A fully interactive customization flow:
 
-### `npm run build`
+Select cake base, frosting, fillings, and toppings
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Dynamic price updates
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Custom cake name input
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Responsive layout for mobile and desktop
 
-### `npm run eject`
+### 🛒 Cart Integration
+Cart functionality powered by Redux Toolkit:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Add/remove items
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Quantity tracking
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Global cart state via cartSlice.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Floating cart badge with item count
 
-## Learn More
+### 🧩 Key Components
+HomePage
+Handles tab navigation (Menu, BYO, Cart)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Displays floating action buttons for quick access
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Wraps content in animated transitions using Framer Motion
 
-### Code Splitting
+Menu
+Renders the full cake catalog
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Displays product cards with images and pricing
 
-### Analyzing the Bundle Size
+Integrates add‑to‑cart actions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Byo
+Manages all customization options
 
-### Making a Progressive Web App
+Updates price based on user selections
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Uses styled UI controls for toppings, inputs, and selectors
 
-### Advanced Configuration
+Cart
+Shows all selected items
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Scrollable layout for long orders
 
-### Deployment
+Allows item removal and quantity adjustments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 🚀 Running the App
+Install dependencies:
+npm install
 
-### `npm run build` fails to minify
+Start development server:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Build for production:
+npm run build
+
+### 🛠️ Technologies Used
+React (CRA)
+
+Redux Toolkit
+
+Styled Components
+
+Framer Motion
+
+Lucide React for icons
+
+### 📜 License
+Copyright (c) 2025
+elvis dovi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

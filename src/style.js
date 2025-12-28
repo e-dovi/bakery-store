@@ -15,7 +15,7 @@ export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background: radial-gradient(circle at top left, #fff7ed, #fce7f3); // softer pastel peach to light pink
+  background: radial-gradient(circle at top left, #fdf2f8, #fae8ff);
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   animation: ${fadeInUp} 0.6s ease-in-out both;
@@ -24,7 +24,6 @@ export const AppContainer = styled.div`
     padding: 2rem;
   }
 `;
-
 
 export const Tabs = styled.div`
   width: 100%;
@@ -37,19 +36,18 @@ export const TabsList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 0.5rem;
-  background-color: #f3e8ff;
+  background-color: #f5d0fe;
   border-radius: 1rem;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
 `;
 
-
 export const TabsTrigger = styled.button`
-  flex: 1 1 45%; /* responsive size under 500px */
+  flex: 1 1 45%;
   min-width: 120px;
   padding: 0.6rem 1rem;
-  background-color: ${({ active }) => (active ? '#c084fc' : 'transparent')};
-  color: ${({ active }) => (active ? '#fff' : '#7e22ce')};
+  background-color: ${({ active }) => (active ? '#a855f7' : 'transparent')};
+  color: ${({ active }) => (active ? '#fff' : '#9333ea')};
   border: none;
   border-radius: 0.75rem;
   font-weight: 600;
@@ -60,10 +58,9 @@ export const TabsTrigger = styled.button`
   gap: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  text-align: center;
 
   &:hover {
-    background-color: ${({ active }) => (active ? '#a855f7' : '#ede9fe')};
+    background-color: ${({ active }) => (active ? '#9333ea' : '#f3e8ff')};
   }
 
   &:focus {
@@ -72,11 +69,10 @@ export const TabsTrigger = styled.button`
   }
 
   @media (max-width: 500px) {
-    flex: 1 1 100%; /* stack buttons full width */
+    flex: 1 1 100%;
     font-size: 0.95rem;
   }
 `;
-
 
 export const IntroSection = styled.section`
   text-align: center;
@@ -105,7 +101,7 @@ export const LogoImage = styled.img`
   width: 160px;
   height: 160px;
   border-radius: 9999px;
-  background-color: #fff; // helps contain the logo visually
+  background-color: #fff;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.54);
   margin-bottom: 1rem;
   object-fit: contain;
@@ -115,7 +111,6 @@ export const LogoImage = styled.img`
     height: 120px;
   }
 `;
-
 
 export const SiteTitle = styled.h1`
   font-size: 2.25rem;
@@ -156,7 +151,7 @@ export const Footer = styled.footer`
   left: 0;
   right: 0;
   width: 100%;
-  background-color: #f3e8ff;
+  background-color: #f5d0fe;
   text-align: center;
   padding: 0.75rem 1rem;
   font-size: 0.875rem;
@@ -164,7 +159,6 @@ export const Footer = styled.footer`
   z-index: 1000;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
 
-  // Prevent text overflow
   p {
     max-width: 100%;
     word-wrap: break-word;
@@ -183,9 +177,6 @@ export const Footer = styled.footer`
     }
   }
 `;
-
-
-
 
 export const ByoContainer = styled.div`
   display: grid;
@@ -218,14 +209,15 @@ export const Card = styled.div`
     transform: translateY(-4px);
   }
 `;
-export const CartScroll = styled.div `
- background: white;
+
+export const CartScroll = styled.div`
+  background: white;
   padding: 1.75rem;
   border-radius: 1.25rem;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
   padding-right: 1rem;
   padding-left: 1rem;
-  `
+`;
 
 export const CardContent = styled.div`
   display: flex;
@@ -237,7 +229,7 @@ export const CardContent = styled.div`
 
 export const CardImage = styled.img`
   max-width: 50%;
-  max-height:50%;
+  max-height: 50%;
   height: auto;
   border-radius: 0.75rem;
   margin-bottom: 1rem;
@@ -246,7 +238,7 @@ export const CardImage = styled.img`
 export const Heading = styled.h2`
   font-size: 2rem;
   font-weight: 700;
-  color: #d946ef;
+  color: #a21caf;
   margin-bottom: 1.25rem;
 `;
 
@@ -264,6 +256,7 @@ export const Input = styled.input`
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
   font-size: 1rem;
+
   &:focus {
     outline: none;
     box-shadow: 0 0 0 3px #f0abfc;
@@ -278,6 +271,7 @@ export const Select = styled.select`
   border-radius: 0.5rem;
   font-size: 1rem;
   background-color: #fff;
+
   &:focus {
     outline: none;
     box-shadow: 0 0 0 3px #f0abfc;
@@ -290,7 +284,7 @@ export const ToppingButton = styled.button`
   font-size: 0.875rem;
   border-radius: 9999px;
   border: 2px solid #e0e0e0;
-  background-color: ${({ selected }) => (selected ? '#c084fc' : '#fff')};
+  background-color: ${({ selected }) => (selected ? '#a855f7' : '#fff')};
   color: ${({ selected }) => (selected ? '#fff' : '#4b5563')};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -298,7 +292,7 @@ export const ToppingButton = styled.button`
 
   &:hover {
     transform: scale(1.1);
-    background-color: ${({ selected }) => (selected ? '#a855f7' : '#f3f4f6')};
+    background-color: ${({ selected }) => (selected ? '#9333ea' : '#f3f4f6')};
   }
 
   &:active {
@@ -307,7 +301,7 @@ export const ToppingButton = styled.button`
 `;
 
 export const Button = styled.button`
-  background-color: #d946ef;
+  background-color: #a21caf;
   color: white;
   font-weight: 600;
   padding: 0.6rem 1.25rem;
@@ -318,7 +312,7 @@ export const Button = styled.button`
   transition: background 0.3s;
 
   &:hover {
-    background-color: #c026d3;
+    background-color: #86198f;
   }
 
   &:active {
@@ -329,7 +323,7 @@ export const Button = styled.button`
 export const Price = styled.p`
   font-size: 0.75rem;
   font-weight: 500;
-  color: #7c3aed;
+  color: #9333ea;
   margin: 0.5rem 0;
 `;
 
@@ -346,7 +340,6 @@ export const ScrollArea = styled.div`
   padding-right: 0.5rem;
   border-radius: 1rem;
 
-  /* Scrollbar styling (WebKit browsers) */
   &::-webkit-scrollbar {
     width: 6px;
   }
@@ -413,8 +406,6 @@ export const MainContent = styled.main`
   animation: ${fadeInUp} 0.6s ease-in-out both;
 `;
 
-
-
 export const TabsContent = styled.div`
   background-color: white;
   border-radius: 1.25rem;
@@ -422,8 +413,6 @@ export const TabsContent = styled.div`
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   animation: ${fadeInUp} 0.5s ease both;
 `;
-
-
 
 export const HeaderSection = styled.header`
   display: flex;
@@ -433,4 +422,3 @@ export const HeaderSection = styled.header`
   text-align: center;
   background-color: transparent;
 `;
-

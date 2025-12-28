@@ -4,69 +4,69 @@ import Item from './item';
 import { motion } from 'framer-motion';
 
 const cakeOptions = [
-    
+
       {
-        id:6,
-        name:'Guava Coconut',
-        image:'/images/guava_coconut.jpg',
-        description:'✨Las rosas rojas son siempre una buena opción ✨🌹',
-        price:900
+        id: 5,
+        name: 'Black Forest Cake',
+        image: '/images/black_forrest.png',
+        description: 'Chocolate sponge, whipped cream, and cherries',
+        price: 900,
       },
 
       {
         id: 4,
-        name: 'Birthday Cake',
-        image: '/images/bday.jpg',
-        description: '✨Para una chica muy femenina, que ama las mariposas 🦋 y le encanta el pink 💓',
+        name: 'Vanilla Sponge Cake',
+        image: '/images/vanilla.png',
+        description: 'Smooth buttercream and rosette border',
         price: 900,
       },
 
       {
         id:1,
-        name:'Mothers Day',
-        image:'/images/mother.jpg',
-        description:'✨ De nuestra colección de madres 2022✨|Una librita llena de amor |🌹',
+        name:'Red Velvet Cake',
+        image:'/images/red.png',
+        description:'Cream cheese frosting and red crumb topping',
         price:900
       },
 
       {
         id: 3,
-        name: 'Mothers Day',
-        image: '/images/mothers.jpg',
-        description: '✨El regalo perfecto para MaMá 💝 ',
+        name: 'Carrot Cake',
+        image: '/images/carrot.png',
+        description: 'Cream cheese frosting with chopped walnuts',
         price: 900,
       },
     
       {
           id: 2,
-          name: 'Gender Reveal',
-          image: '/images/gender.jpg',
-          description: 'It’s a girl!🎀',
+          name: 'Lemon Drizzle Cake',
+          image: '/images/lemon.png',
+          description: 'Lemon curd, frosting, and zest curls',
           price: 900,
       },
 
       {
+        id:7,
+        name:'Strawberry Shortcake',
+        image:'images/strawberry.png',
+        description:'Whipped cream and fresh strawberries',
+        price:900
+      },
+      {
         id: 5,
-        name: 'Fruit Theme',
-        image: '/images/orange.jpg', // ✅ Correct
-        description: '🍊✨',
+        name: 'Tiramisu Cake',
+        image: '/images/tiramisu.png',
+        description: 'Coffee-soaked sponge, mascarpone cream, and cocoa dusting',
         price: 900,
       },
 
       {
-          id:7,
-          name:'Safari',
-          image:'images/safari.jpg',
-          description:'SAFARI 🦁🐵🦒🌿',
-          price:900
-      },
-      {
-        id: 5,
-        name: 'Sonic',
-        image: '/images/sonic.jpg', // ✅ Correct
-        description: 'S O N I C 💫💫',
-        price: 900,
-      },
+        id:6,
+        name:'Chocolate Cake',
+        image:'/images/chocolate.png',
+        description:'Rich sponge with glossy ganache and piped swirls',
+        price:900
+      }
 ];
 
 
@@ -77,23 +77,21 @@ export const CakeStorePage = () => {
       <div>
         <h1 className="text-3xl font-bold mb-4">🎂 Browse Cakes</h1>
         <ScrollArea className="h-[500px] pr-4" style={{ width: '100%', boxSizing: 'border-box' }}>
-{cakeOptions.map((item, index) => (
-  <motion.div
-    key={item.id}
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: index * 0.1 }}
-    style={{ padding: '1%' }}
-  >
-    <Item
-      name={item.name}
-      pic={item.image}
-      desc={item.description}
-      price={item.price}
-      id={item.id}
-    />
-  </motion.div>
-))}        </ScrollArea>
+          {cakeOptions.map((item, index) => (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              style={{ padding: '1%' }}>
+              <Item
+                name={item.name}
+                pic={item.image}
+                desc={item.description}
+                price={item.price}
+                id={item.id} />
+            </motion.div>
+))}     </ScrollArea>
       </div>
     </div>
   );
