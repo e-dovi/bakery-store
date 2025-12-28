@@ -1,6 +1,8 @@
 # 🎂 Sweet Layers Bakery
 A responsive React (Create React App) application that showcases a pastel‑themed bakery storefront with a full cake menu, a build‑your‑own cake customizer, and a Redux‑powered shopping cart. The UI is styled using Styled Components with smooth animations from Framer Motion, optimized for both desktop and smaller screens.
 
+👉 Live Demo: https://sweet-layers-bakery.netlify.app
+
 ## 📦 Features
 
 ### 🎂 Cake Menu
